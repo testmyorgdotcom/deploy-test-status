@@ -1,7 +1,7 @@
 {
   "name": "deploy-test-status",
   "description": "SFDX Plugin to provide CI compatible test status report for sfdx projects deploys",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "baksale",
   "bugs": "git@github.com:testmyorgdotcom/deploy-test-status/issues",
   "dependencies": {

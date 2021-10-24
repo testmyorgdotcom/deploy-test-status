@@ -21,7 +21,7 @@ $ npm install -g deploy-test-status
 $ sfdx COMMAND
 running command...
 $ sfdx (-v|--version|version)
-deploy-test-status/0.0.1 linux-x64 node-v14.18.1
+deploy-test-status/0.0.2 linux-x64 node-v14.18.1
 $ sfdx --help [COMMAND]
 USAGE
   $ sfdx COMMAND
@@ -59,5 +59,5 @@ EXAMPLE
   sfdx tmo:deploy:test:status --targetusername myOrg@example.com --jobid 0Af0900000O0xyABCD
 ```
 
-_See code: [src/commands/tmo/deploy/test/status.ts](https://github.com/testmyorg/deploy-test-status/blob/v0.0.1/src/commands/tmo/deploy/test/status.ts)_
+_See code: [src/commands/tmo/deploy/test/status.ts](https://github.com/testmyorg/deploy-test-status/blob/v0.0.2/src/commands/tmo/deploy/test/status.ts)_
 <!-- commandsstop -->
