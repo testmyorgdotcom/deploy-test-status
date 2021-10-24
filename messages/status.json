@@ -1,0 +1,8 @@
+{
+  "commandDescription": "gets deploy test status report in CI-ready format",
+  "jobidFlagDescription": "job id of the deployment you want to check test status for",
+  "jobidFlagMissingErrorMessage": "job id is the mandatory parameter, please specify via -i 0A...",
+  "examples": [
+    "sfdx tmo:deploy:test:status --targetusername myOrg@example.com --jobid 0Af0900000O0xyABCD"
+  ]
+}
