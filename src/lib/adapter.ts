@@ -33,13 +33,15 @@ export class DeployReportJunitTestAdapater {
     return this.property('skipped', '0');
   }
   public buildPassRateProperty(): string {
-    return this.property(
-      'passRate',
-      `${((this.testsRunCount() - this.failuresCount()) / this.testsRunCount()) * 100}%`
-    );
+    const passRate =
+      this.testsRunCount() === 0
+        ? '100%'
+        : `${((this.testsRunCount() - this.failuresCount()) / this.testsRunCount()) * 100}%`;
+    return this.property('passRate', passRate);
   }
   public buildFailRateProperty(): string {
-    return this.property('failRate', `${(this.failuresCount() / this.testsRunCount()) * 100}%`);
+    const failRate = this.testsRunCount() === 0 ? '0%' : `${(this.failuresCount() / this.testsRunCount()) * 100}%`;
+    return this.property('failRate', failRate);
   }
   public buildTotalTimeProperty(): string {
     return this.property('testTotalTime', `${+this.deployRunTestResult.totalTime / 1000} s`);
@@ -114,7 +116,7 @@ export class DeployReportJunitTestAdapater {
       `      ${this.buildFailRateProperty()}\n` +
       `      ${this.buildTotalTimeProperty()}\n` +
       `      ${this.buildExecTimeProperty()}\n` +
-      '    </properties>'
+      '    </properties>\n'
     );
   }
 }

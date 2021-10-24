@@ -69,6 +69,12 @@ describe('junit adapter', () => {
 
       expect(adapter.buildPassRateProperty()).to.equal(property('passRate', `${(testsPassed / testsRan) * 100}%`));
     });
+    it('has "passRate" property 100% if no tests', () => {
+      const deployTestResult: RunTestResult = {};
+      const adapter: DeployReportJunitTestAdapater = new DeployReportJunitTestAdapater(deployTestResult);
+
+      expect(adapter.buildPassRateProperty()).to.equal(property('passRate', '100%'));
+    });
     it('has "failRate" property', () => {
       const testsRan = 100;
       const testsFailed = 37;
@@ -79,6 +85,12 @@ describe('junit adapter', () => {
       const adapter: DeployReportJunitTestAdapater = new DeployReportJunitTestAdapater(deployTestResult);
 
       expect(adapter.buildFailRateProperty()).to.equal(property('failRate', `${(testsFailed / testsRan) * 100}%`));
+    });
+    it('has "failRate" property 0% if no tests', () => {
+      const deployTestResult: RunTestResult = {};
+      const adapter: DeployReportJunitTestAdapater = new DeployReportJunitTestAdapater(deployTestResult);
+
+      expect(adapter.buildFailRateProperty()).to.equal(property('failRate', '0%'));
     });
     it('has duration related properties', () => {
       const totalTimeInMillis = 1565.0;
