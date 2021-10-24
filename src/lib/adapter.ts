@@ -57,15 +57,19 @@ export class DeployReportJunitTestAdapater {
   }
   public buildSuccessfullTests(): string[] {
     const result: string[] = [];
-    for (const testCase of this.deployRunTestResult.successes) {
-      result.push(this.buildSuccessfullTestCase(testCase));
+    if (this.deployRunTestResult.successes !== undefined) {
+      for (const testCase of this.deployRunTestResult.successes) {
+        result.push(this.buildSuccessfullTestCase(testCase));
+      }
     }
     return result;
   }
   public buildFailedTests(): string[] {
     const result: string[] = [];
-    for (const testCase of this.deployRunTestResult.failures) {
-      result.push(this.buildFailedTestCase(testCase));
+    if (this.deployRunTestResult.failures !== undefined) {
+      for (const testCase of this.deployRunTestResult.failures) {
+        result.push(this.buildFailedTestCase(testCase));
+      }
     }
     return result;
   }
