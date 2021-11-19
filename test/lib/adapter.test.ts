@@ -184,5 +184,15 @@ describe('junit adapter', () => {
       const adapter: DeployReportJunitTestAdapater = new DeployReportJunitTestAdapater(deployTestResult);
       expect(adapter.testReport()).not.to.be.equal('');
     });
+    it('escapes double quotes in message value', () => {
+      const result: string = new DeployReportJunitTestAdapater(null).buildFailedTestCase({
+        message: '"n"',
+        methodName: 'not contains quotes',
+        name: 'not contains quotes',
+        stackTrace: 'not contains quoutes',
+        time: '123',
+      });
+      expect(result).to.contain('<failure message="&quot;n&quot;">');
+    });
   });
 });
