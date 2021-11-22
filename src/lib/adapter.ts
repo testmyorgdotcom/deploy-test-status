@@ -90,7 +90,12 @@ export class DeployReportJunitTestAdapater {
     return result;
   }
   private buildFailure(testCase: Failure): string {
-    return `<failure message="${testCase.message}"><![CDATA[${testCase.stackTrace}]]></failure>`;
+    return `<failure message="${this.escapeDoubleQuotes(testCase.message)}"><![CDATA[${
+      testCase.stackTrace
+    }]]></failure>`;
+  }
+  private escapeDoubleQuotes(s: string): string {
+    return s.replace(/"/g, '&quot;');
   }
   private hasFailures(): boolean {
     return this.deployRunTestResult.numFailures !== undefined && this.deployRunTestResult.numFailures !== '0';
