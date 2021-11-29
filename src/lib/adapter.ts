@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/member-ordering */
 import { Failure, RunTestResult, Success } from './model';
 
 export class DeployReportJunitTestAdapater {
@@ -9,7 +10,7 @@ export class DeployReportJunitTestAdapater {
     const report =
       '<?xml version="1.0" encoding="UTF-8"?>\n' +
       '<testsuites>\n' +
-      '  <testsuite>\n' +
+      this.buildTestSuite() +
       this.buildAllPropertiesAsXML() +
       this.buildSuccessfullTestsAsXML() +
       this.buildFailedTestsAsXML() +
@@ -17,11 +18,24 @@ export class DeployReportJunitTestAdapater {
       '</testsuites>';
     return report;
   }
+  public buildTestSuite(): string {
+    return (
+      `  <testsuite ${this.attribute('name', 'force.apex')} ${this.attribute('tests', this.testsRun())} ` +
+      `${this.attribute('failures', this.failuresCount())} ` +
+      `${this.attribute('time', this.totalTime() / 1000)}>\n`
+    );
+  }
+  private attribute(name: string, value: string | number): string {
+    return `${name}="${value}"`;
+  }
   public buildOutcomeProperty(): string {
     return this.property('outcome', this.hasFailures() ? 'Failed' : 'Passed');
   }
   public buildTestsRanProperty(): string {
-    return this.property('testsRan', this.deployRunTestResult.numTestsRun);
+    return this.property('testsRan', this.testsRun());
+  }
+  private testsRun(): string {
+    return this.deployRunTestResult.numTestsRun || '0';
   }
   public buildTestsPassedProperty(): string {
     return this.property('passing', `${this.testsRunCount() - this.failuresCount()}`);
@@ -44,10 +58,28 @@ export class DeployReportJunitTestAdapater {
     return this.property('failRate', failRate);
   }
   public buildTotalTimeProperty(): string {
-    return this.property('testTotalTime', `${+this.deployRunTestResult.totalTime / 1000} s`);
+    return this.property('testTotalTime', `${this.totalTime() / 1000} s`);
+  }
+  public buildCoveredLinesProperty(): string {
+    return this.property('coveredLines', this.calculateCoveredLines());
+  }
+  private totalTime(): number {
+    return +this.deployRunTestResult.totalTime;
+  }
+  private calculateCoveredLines(): number {
+    return this.deployRunTestResult.codeCoverage.reduce((prev, cover) => {
+      return +prev + +cover.numLocations - +cover.numLocationsNotCovered;
+    }, 0);
+  }
+  public buildTestRunCoverageProperty(): string {
+    const totalLines = this.deployRunTestResult.codeCoverage.reduce((prev, cover) => +prev + +cover.numLocations, 0);
+    return this.property('testRunCoverage', `${(this.calculateCoveredLines() / totalLines) * 100}%`);
+  }
+  private hasCoverage(): boolean {
+    return this.deployRunTestResult.codeCoverage && this.deployRunTestResult.codeCoverage.length > 0;
   }
   public buildExecTimeProperty(): string {
-    return this.property('testExecutionTime', `${+this.deployRunTestResult.totalTime / 1000} s`);
+    return this.property('testExecutionTime', `${this.totalTime() / 1000} s`);
   }
   public buildSuccessfullTestCase(testCase: Success): string {
     return `<testcase name="${testCase.methodName}" classname="${testCase.name}" time="${+testCase.time / 1000}" />`;
@@ -106,7 +138,7 @@ export class DeployReportJunitTestAdapater {
   private testsRunCount(): number {
     return this.deployRunTestResult.numTestsRun !== undefined ? +this.deployRunTestResult.numTestsRun : 0;
   }
-  private property(name: string, value: string): string {
+  private property(name: string, value: string | number): string {
     return `<property name="${name}" value="${value}" />`;
   }
   private buildAllPropertiesAsXML(): string {
@@ -121,7 +153,11 @@ export class DeployReportJunitTestAdapater {
       `      ${this.buildFailRateProperty()}\n` +
       `      ${this.buildTotalTimeProperty()}\n` +
       `      ${this.buildExecTimeProperty()}\n` +
+      `${this.hasCoverage() ? this.buildCoverageProperties() + '\n' : ''}` +
       '    </properties>\n'
     );
+  }
+  private buildCoverageProperties(): string {
+    return `      ${this.buildCoveredLinesProperty()}\n` + `      ${this.buildTestRunCoverageProperty()}`;
   }
 }
