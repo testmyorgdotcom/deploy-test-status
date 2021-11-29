@@ -1,12 +1,49 @@
 import { expect } from 'fancy-test';
-import { Failure, RunTestResult, Success } from '../../src/lib/model';
+import { CodeCoverage, Failure, RunTestResult, Success } from '../../src/lib/model';
 import { DeployReportJunitTestAdapater } from '../../src/lib/adapter';
 
 describe('junit adapter', () => {
-  describe('base properties', () => {
-    const property = (name: string, value: string): string => {
-      return `<property name="${name}" value="${value}" />`;
+  const property = (name: string, value: string): string => {
+    return `<property name="${name}" value="${value}" />`;
+  };
+  describe('test suite', () => {
+    const attribute = (name: string, value: string): string => {
+      return `${name}="${value}"`;
     };
+    it('gives "force.apex" name to the test suite', () => {
+      const adapter: DeployReportJunitTestAdapater = new DeployReportJunitTestAdapater({});
+
+      expect(adapter.buildTestSuite()).to.contain(attribute('name', 'force.apex'));
+    });
+    it('adds "tests" attribute to the tag', () => {
+      const testsRan = '32';
+      const deployTestResult: RunTestResult = {
+        numTestsRun: testsRan,
+      };
+      const adapter: DeployReportJunitTestAdapater = new DeployReportJunitTestAdapater(deployTestResult);
+
+      expect(adapter.buildTestSuite()).to.contain(attribute('tests', testsRan));
+    });
+    it('adds "failures" attribute to the tag', () => {
+      const testsFailed = '2';
+      const deployTestResult: RunTestResult = {
+        numFailures: testsFailed,
+      };
+      const adapter: DeployReportJunitTestAdapater = new DeployReportJunitTestAdapater(deployTestResult);
+
+      expect(adapter.buildTestSuite()).to.contain(attribute('failures', testsFailed));
+    });
+    it('adds "time" attribute to the tag', () => {
+      const totalTimeInMillis = 1565.0;
+      const deployTestResult: RunTestResult = {
+        totalTime: `${totalTimeInMillis}`,
+      };
+      const adapter: DeployReportJunitTestAdapater = new DeployReportJunitTestAdapater(deployTestResult);
+
+      expect(adapter.buildTestSuite()).to.contain(attribute('time', `${totalTimeInMillis / 1000}`));
+    });
+  });
+  describe('base properties', () => {
     it('has "Failed" outcome if there are failed tests', () => {
       const deployTestResult: RunTestResult = {
         numFailures: '1',
@@ -197,14 +234,43 @@ describe('junit adapter', () => {
       expect(adapter.testReport()).not.to.be.equal('');
     });
     it('escapes double quotes in message value', () => {
-      const result: string = new DeployReportJunitTestAdapater(null).buildFailedTestCase({
-        message: '"n"',
-        methodName: 'not contains quotes',
-        name: 'not contains quotes',
-        stackTrace: 'not contains quoutes',
-        time: '123',
+      const result: string = new DeployReportJunitTestAdapater({}).buildFailedTestCase({
+        ...failure(),
+        message: 'message with "double" quotes',
       });
-      expect(result).to.contain('<failure message="&quot;n&quot;">');
+      expect(result).to.contain('<failure message="message with &quot;double&quot; quotes');
+    });
+  });
+  describe('Test Coverage', () => {
+    const coverage = (locations: number, locationsNotCovered: number): CodeCoverage => {
+      return {
+        numLocations: locations,
+        numLocationsNotCovered: locationsNotCovered,
+      };
+    };
+    it('has "coveredLines" property', () => {
+      const lines = 4;
+      const uncoveredLines = 2;
+      const deployTestResult: RunTestResult = {
+        codeCoverage: [
+          coverage(lines, uncoveredLines),
+          coverage(lines, uncoveredLines),
+          coverage(lines, uncoveredLines),
+        ],
+      };
+      const adapter: DeployReportJunitTestAdapater = new DeployReportJunitTestAdapater(deployTestResult);
+
+      expect(adapter.buildCoveredLinesProperty()).to.equal(property('coveredLines', `${3 * (lines - uncoveredLines)}`));
+    });
+    it('has "testRunCoverage" property', () => {
+      const lines = 5;
+      const uncoveredLines = 2;
+      const deployTestResult: RunTestResult = { codeCoverage: [coverage(lines, uncoveredLines)] };
+      const adapter: DeployReportJunitTestAdapater = new DeployReportJunitTestAdapater(deployTestResult);
+
+      expect(adapter.buildTestRunCoverageProperty()).to.equal(
+        property('testRunCoverage', `${((lines - uncoveredLines) / lines) * 100}%`)
+      );
     });
   });
 });

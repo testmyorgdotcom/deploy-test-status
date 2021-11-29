@@ -13,6 +13,12 @@ export interface RunTestResult {
   numTestsRun?: string;
   successes?: Success[];
   totalTime?: string;
+  codeCoverage?: CodeCoverage[];
+}
+
+export interface CodeCoverage {
+  numLocations: number;
+  numLocationsNotCovered: number;
 }
 
 export interface Failure {

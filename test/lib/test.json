@@ -1,0 +1,1185 @@
+{
+  "checkOnly": true,
+  "completedDate": "2021-11-28T16:08:49.000Z",
+  "createdBy": "00509000001Fyrl",
+  "createdByName": "Alexey Bakshaev",
+  "createdDate": "2021-11-28T16:08:43.000Z",
+  "details": {
+    "componentSuccesses": [
+      {
+        "changed": "false",
+        "componentType": "ApexClass",
+        "created": "false",
+        "createdDate": "2021-11-28T16:08:45.000Z",
+        "deleted": "false",
+        "fileName": "classes/ChangePasswordController.cls",
+        "fullName": "ChangePasswordController",
+        "id": "01p0900000K2lE4AAJ",
+        "success": "true"
+      },
+      {
+        "changed": "false",
+        "componentType": "ApexClass",
+        "created": "false",
+        "createdDate": "2021-11-28T16:08:45.000Z",
+        "deleted": "false",
+        "fileName": "classes/ChangePasswordControllerTest.cls",
+        "fullName": "ChangePasswordControllerTest",
+        "id": "01p0900000K2lE5AAJ",
+        "success": "true"
+      },
+      {
+        "changed": "false",
+        "componentType": "ApexClass",
+        "created": "false",
+        "createdDate": "2021-11-28T16:08:45.000Z",
+        "deleted": "false",
+        "fileName": "classes/LightningSelfRegisterControllerTest.cls",
+        "fullName": "LightningSelfRegisterControllerTest",
+        "id": "01p0900000K2lENAAZ",
+        "success": "true"
+      },
+      {
+        "changed": "false",
+        "componentType": "ApexClass",
+        "created": "false",
+        "createdDate": "2021-11-28T16:08:45.000Z",
+        "deleted": "false",
+        "fileName": "classes/LightningSelfRegisterController.cls",
+        "fullName": "LightningSelfRegisterController",
+        "id": "01p0900000K2lEIAAZ",
+        "success": "true"
+      },
+      {
+        "changed": "false",
+        "componentType": "ApexClass",
+        "created": "false",
+        "createdDate": "2021-11-28T16:08:45.000Z",
+        "deleted": "false",
+        "fileName": "classes/LightningLoginFormControllerTest.cls",
+        "fullName": "LightningLoginFormControllerTest",
+        "id": "01p0900000K2lELAAZ",
+        "success": "true"
+      },
+      {
+        "changed": "false",
+        "componentType": "ApexClass",
+        "created": "false",
+        "createdDate": "2021-11-28T16:08:45.000Z",
+        "deleted": "false",
+        "fileName": "classes/LightningLoginFormController.cls",
+        "fullName": "LightningLoginFormController",
+        "id": "01p0900000K2lEKAAZ",
+        "success": "true"
+      },
+      {
+        "changed": "false",
+        "componentType": "ApexClass",
+        "created": "false",
+        "createdDate": "2021-11-28T16:08:45.000Z",
+        "deleted": "false",
+        "fileName": "classes/LightningForgotPasswordControllerTest.cls",
+        "fullName": "LightningForgotPasswordControllerTest",
+        "id": "01p0900000K2lEMAAZ",
+        "success": "true"
+      },
+      {
+        "changed": "false",
+        "componentType": "ApexClass",
+        "created": "false",
+        "createdDate": "2021-11-28T16:08:45.000Z",
+        "deleted": "false",
+        "fileName": "classes/LightningForgotPasswordController.cls",
+        "fullName": "LightningForgotPasswordController",
+        "id": "01p0900000K2lEJAAZ",
+        "success": "true"
+      },
+      {
+        "changed": "false",
+        "componentType": "ApexClass",
+        "created": "false",
+        "createdDate": "2021-11-28T16:08:45.000Z",
+        "deleted": "false",
+        "fileName": "classes/CommunitiesLandingController.cls",
+        "fullName": "CommunitiesLandingController",
+        "id": "01p0900000K2lECAAZ",
+        "success": "true"
+      },
+      {
+        "changed": "false",
+        "componentType": "ApexClass",
+        "created": "false",
+        "createdDate": "2021-11-28T16:08:45.000Z",
+        "deleted": "false",
+        "fileName": "classes/CommunitiesLandingControllerTest.cls",
+        "fullName": "CommunitiesLandingControllerTest",
+        "id": "01p0900000K2lEDAAZ",
+        "success": "true"
+      },
+      {
+        "changed": "false",
+        "componentType": "ApexClass",
+        "created": "false",
+        "createdDate": "2021-11-28T16:08:45.000Z",
+        "deleted": "false",
+        "fileName": "classes/CommunitiesLoginController.cls",
+        "fullName": "CommunitiesLoginController",
+        "id": "01p0900000K2lEAAAZ",
+        "success": "true"
+      },
+      {
+        "changed": "false",
+        "componentType": "ApexClass",
+        "created": "false",
+        "createdDate": "2021-11-28T16:08:45.000Z",
+        "deleted": "false",
+        "fileName": "classes/CommunitiesLoginControllerTest.cls",
+        "fullName": "CommunitiesLoginControllerTest",
+        "id": "01p0900000K2lEBAAZ",
+        "success": "true"
+      },
+      {
+        "changed": "false",
+        "componentType": "ApexClass",
+        "created": "false",
+        "createdDate": "2021-11-28T16:08:45.000Z",
+        "deleted": "false",
+        "fileName": "classes/CommunitiesSelfRegConfirmController.cls",
+        "fullName": "CommunitiesSelfRegConfirmController",
+        "id": "01p0900000K2lEGAAZ",
+        "success": "true"
+      },
+      {
+        "changed": "false",
+        "componentType": "ApexClass",
+        "created": "false",
+        "createdDate": "2021-11-28T16:08:45.000Z",
+        "deleted": "false",
+        "fileName": "classes/CommunitiesSelfRegConfirmControllerTest.cls",
+        "fullName": "CommunitiesSelfRegConfirmControllerTest",
+        "id": "01p0900000K2lEHAAZ",
+        "success": "true"
+      },
+      {
+        "changed": "false",
+        "componentType": "ApexClass",
+        "created": "false",
+        "createdDate": "2021-11-28T16:08:45.000Z",
+        "deleted": "false",
+        "fileName": "classes/CommunitiesSelfRegController.cls",
+        "fullName": "CommunitiesSelfRegController",
+        "id": "01p0900000K2lEEAAZ",
+        "success": "true"
+      },
+      {
+        "changed": "false",
+        "componentType": "ApexClass",
+        "created": "false",
+        "createdDate": "2021-11-28T16:08:45.000Z",
+        "deleted": "false",
+        "fileName": "classes/CommunitiesSelfRegControllerTest.cls",
+        "fullName": "CommunitiesSelfRegControllerTest",
+        "id": "01p0900000K2lEFAAZ",
+        "success": "true"
+      },
+      {
+        "changed": "false",
+        "componentType": "ApexClass",
+        "created": "false",
+        "createdDate": "2021-11-28T16:08:45.000Z",
+        "deleted": "false",
+        "fileName": "classes/ForgotPasswordController.cls",
+        "fullName": "ForgotPasswordController",
+        "id": "01p0900000K2lE6AAJ",
+        "success": "true"
+      },
+      {
+        "changed": "false",
+        "componentType": "ApexClass",
+        "created": "false",
+        "createdDate": "2021-11-28T16:08:45.000Z",
+        "deleted": "false",
+        "fileName": "classes/ForgotPasswordControllerTest.cls",
+        "fullName": "ForgotPasswordControllerTest",
+        "id": "01p0900000K2lE7AAJ",
+        "success": "true"
+      },
+      {
+        "changed": "false",
+        "componentType": "ApexClass",
+        "created": "false",
+        "createdDate": "2021-11-28T16:08:46.000Z",
+        "deleted": "false",
+        "fileName": "classes/MyProfilePageControllerTest.cls",
+        "fullName": "MyProfilePageControllerTest",
+        "id": "01p0900000K2lE9AAJ",
+        "success": "true"
+      },
+      {
+        "changed": "false",
+        "componentType": "ApexClass",
+        "created": "false",
+        "createdDate": "2021-11-28T16:08:46.000Z",
+        "deleted": "false",
+        "fileName": "classes/MyProfilePageController.cls",
+        "fullName": "MyProfilePageController",
+        "id": "01p0900000K2lE8AAJ",
+        "success": "true"
+      },
+      {
+        "changed": "false",
+        "componentType": "ApexClass",
+        "created": "false",
+        "createdDate": "2021-11-28T16:08:46.000Z",
+        "deleted": "false",
+        "fileName": "classes/SiteRegisterControllerTest.cls",
+        "fullName": "SiteRegisterControllerTest",
+        "id": "01p0900000K2lE3AAJ",
+        "success": "true"
+      },
+      {
+        "changed": "false",
+        "componentType": "ApexClass",
+        "created": "false",
+        "createdDate": "2021-11-28T16:08:46.000Z",
+        "deleted": "false",
+        "fileName": "classes/SiteRegisterController.cls",
+        "fullName": "SiteRegisterController",
+        "id": "01p0900000K2lE2AAJ",
+        "success": "true"
+      },
+      {
+        "changed": "false",
+        "componentType": "ApexClass",
+        "created": "false",
+        "createdDate": "2021-11-28T16:08:46.000Z",
+        "deleted": "false",
+        "fileName": "classes/SiteLoginControllerTest.cls",
+        "fullName": "SiteLoginControllerTest",
+        "id": "01p0900000K2lE1AAJ",
+        "success": "true"
+      },
+      {
+        "changed": "false",
+        "componentType": "ApexClass",
+        "created": "false",
+        "createdDate": "2021-11-28T16:08:46.000Z",
+        "deleted": "false",
+        "fileName": "classes/SiteLoginController.cls",
+        "fullName": "SiteLoginController",
+        "id": "01p0900000K2lE0AAJ",
+        "success": "true"
+      },
+      {
+        "changed": "true",
+        "componentType": "",
+        "created": "false",
+        "createdDate": "2021-11-28T16:08:46.000Z",
+        "deleted": "false",
+        "fileName": "package.xml",
+        "fullName": "package.xml",
+        "success": "true"
+      }
+    ],
+    "runTestResult": {
+      "codeCoverage": [
+        {
+          "id": "01p0900000CmFmXAAV",
+          "name": "tt_UtilController",
+          "namespace": "trlhdtips",
+          "numLocations": "16",
+          "numLocationsNotCovered": "0",
+          "type": "Class"
+        },
+        {
+          "id": "01p0900000K2lEAAAZ",
+          "name": "CommunitiesLoginController",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "numLocations": "5",
+          "numLocationsNotCovered": "0",
+          "type": "Class"
+        },
+        {
+          "id": "01p0900000K2lEGAAZ",
+          "name": "CommunitiesSelfRegConfirmController",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "numLocations": "1",
+          "numLocationsNotCovered": "0",
+          "type": "Class"
+        },
+        {
+          "id": "01p0900000K2lEJAAZ",
+          "locationsNotCovered": [
+            {
+              "column": "0",
+              "line": "15",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "16",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "24",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "26",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "27",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "28",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "30",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "31",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "32",
+              "numExecutions": "0",
+              "time": "-1.0"
+            }
+          ],
+          "name": "LightningForgotPasswordController",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "numLocations": "18",
+          "numLocationsNotCovered": "9",
+          "type": "Class"
+        },
+        {
+          "id": "01p0900000K2lEIAAZ",
+          "locationsNotCovered": [
+            {
+              "column": "0",
+              "line": "21",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "51",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "87",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "93",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "111",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "112",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "113",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "114",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "115",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "116",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "117",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "118",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "119",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "120",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "126",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "128",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "129",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "130",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "132",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "133",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "134",
+              "numExecutions": "0",
+              "time": "-1.0"
+            }
+          ],
+          "name": "LightningSelfRegisterController",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "numLocations": "77",
+          "numLocationsNotCovered": "21",
+          "type": "Class"
+        },
+        {
+          "id": "01p0900000K2lEEAAZ",
+          "locationsNotCovered": [
+            {
+              "column": "0",
+              "line": "16",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "51",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "52",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "53",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "54",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "63",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "64",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "67",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "68",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "69",
+              "numExecutions": "0",
+              "time": "-1.0"
+            }
+          ],
+          "name": "CommunitiesSelfRegController",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "numLocations": "42",
+          "numLocationsNotCovered": "10",
+          "type": "Class"
+        },
+        {
+          "id": "01p0900000K2lECAAZ",
+          "name": "CommunitiesLandingController",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "numLocations": "3",
+          "numLocationsNotCovered": "0",
+          "type": "Class"
+        },
+        {
+          "id": "01p0900000K2lE8AAJ",
+          "locationsNotCovered": [
+            {
+              "column": "0",
+              "line": "21",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "37",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "38",
+              "numExecutions": "0",
+              "time": "-1.0"
+            }
+          ],
+          "name": "MyProfilePageController",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "numLocations": "24",
+          "numLocationsNotCovered": "3",
+          "type": "Class"
+        },
+        {
+          "id": "01p0900000K2lEKAAZ",
+          "locationsNotCovered": [
+            {
+              "column": "0",
+              "line": "8",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "9",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "10",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "11",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "12",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "14",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "15",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "35",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "41",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "42",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "43",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "54",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "56",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "57",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "58",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "60",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "61",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "62",
+              "numExecutions": "0",
+              "time": "-1.0"
+            }
+          ],
+          "name": "LightningLoginFormController",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "numLocations": "33",
+          "numLocationsNotCovered": "18",
+          "type": "Class"
+        },
+        {
+          "id": "01p0900000K2lE0AAJ",
+          "name": "SiteLoginController",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "numLocations": "6",
+          "numLocationsNotCovered": "0",
+          "type": "Class"
+        },
+        {
+          "id": "01p0900000K2lE6AAJ",
+          "locationsNotCovered": {
+            "column": "0",
+            "line": "15",
+            "numExecutions": "0",
+            "time": "-1.0"
+          },
+          "name": "ForgotPasswordController",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "numLocations": "9",
+          "numLocationsNotCovered": "1",
+          "type": "Class"
+        },
+        {
+          "id": "01p0900000K2lE4AAJ",
+          "name": "ChangePasswordController",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "numLocations": "6",
+          "numLocationsNotCovered": "0",
+          "type": "Class"
+        },
+        {
+          "id": "01p0900000K2lE2AAJ",
+          "locationsNotCovered": [
+            {
+              "column": "0",
+              "line": "39",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "40",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "43",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "44",
+              "numExecutions": "0",
+              "time": "-1.0"
+            },
+            {
+              "column": "0",
+              "line": "45",
+              "numExecutions": "0",
+              "time": "-1.0"
+            }
+          ],
+          "name": "SiteRegisterController",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "numLocations": "27",
+          "numLocationsNotCovered": "5",
+          "type": "Class"
+        }
+      ],
+      "codeCoverageWarnings": {
+        "id": "01p0900000CmFmXAAV",
+        "message": "Average test coverage across all Apex Classes and Triggers is 74%, at least 75% test coverage is required.",
+        "name": {
+          "$": {
+            "xsi:nil": "true"
+          }
+        },
+        "namespace": ""
+      },
+      "numFailures": "0",
+      "numTestsRun": "28",
+      "successes": [
+        {
+          "id": "01p0900000K2lEFAAZ",
+          "methodName": "testCommunitiesSelfRegController",
+          "name": "CommunitiesSelfRegControllerTest",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "time": "73.0"
+        },
+        {
+          "id": "01p0900000K2lEHAAZ",
+          "methodName": "testCommunitiesSelfRegConfirmController",
+          "name": "CommunitiesSelfRegConfirmControllerTest",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "time": "65.0"
+        },
+        {
+          "id": "01p0900000K2lEBAAZ",
+          "methodName": "testCommunitiesLoginController",
+          "name": "CommunitiesLoginControllerTest",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "time": "145.0"
+        },
+        {
+          "id": "01p0900000K2lEDAAZ",
+          "methodName": "testCommunitiesLandingController",
+          "name": "CommunitiesLandingControllerTest",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "time": "52.0"
+        },
+        {
+          "id": "01p0900000K2lE5AAJ",
+          "methodName": "testChangePasswordController",
+          "name": "ChangePasswordControllerTest",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "time": "58.0"
+        },
+        {
+          "id": "01p0900000K2lENAAZ",
+          "methodName": "testGetNullExtraFields",
+          "name": "LightningSelfRegisterControllerTest",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "time": "74.0"
+        },
+        {
+          "id": "01p0900000K2lENAAZ",
+          "methodName": "testIsValidPassword",
+          "name": "LightningSelfRegisterControllerTest",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "time": "45.0"
+        },
+        {
+          "id": "01p0900000K2lENAAZ",
+          "methodName": "testGetNonEmptyExtraFields",
+          "name": "LightningSelfRegisterControllerTest",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "time": "59.0"
+        },
+        {
+          "id": "01p0900000K2lENAAZ",
+          "methodName": "testGetExtraFieldsInSelfRegistration",
+          "name": "LightningSelfRegisterControllerTest",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "time": "109.0"
+        },
+        {
+          "id": "01p0900000K2lENAAZ",
+          "methodName": "LightningSelfRegisterControllerInstantiation",
+          "name": "LightningSelfRegisterControllerTest",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "time": "51.0"
+        },
+        {
+          "id": "01p0900000K2lELAAZ",
+          "methodName": "testIsUsernamePasswordEnabled",
+          "name": "LightningLoginFormControllerTest",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "time": "72.0"
+        },
+        {
+          "id": "01p0900000K2lELAAZ",
+          "methodName": "testIsSelfRegistrationEnabled",
+          "name": "LightningLoginFormControllerTest",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "time": "48.0"
+        },
+        {
+          "id": "01p0900000K2lELAAZ",
+          "methodName": "testGetSelfRegistrationURL",
+          "name": "LightningLoginFormControllerTest",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "time": "49.0"
+        },
+        {
+          "id": "01p0900000K2lELAAZ",
+          "methodName": "testAuthConfig",
+          "name": "LightningLoginFormControllerTest",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "time": "90.0"
+        },
+        {
+          "id": "01p0900000K2lE7AAJ",
+          "methodName": "testForgotPasswordController",
+          "name": "ForgotPasswordControllerTest",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "time": "56.0"
+        },
+        {
+          "id": "01p0900000K2lEMAAZ",
+          "methodName": "LightningForgotPasswordControllerInstantiation",
+          "name": "LightningForgotPasswordControllerTest",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "time": "48.0"
+        },
+        {
+          "id": "01p0900000K2lEMAAZ",
+          "methodName": "testLightningForgotPasswordControllerInvalidUserName",
+          "name": "LightningForgotPasswordControllerTest",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "time": "48.0"
+        },
+        {
+          "id": "01p0900000K2lEMAAZ",
+          "methodName": "testLightningForgotPasswordControllerWithNullCheckEmailRef",
+          "name": "LightningForgotPasswordControllerTest",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "time": "48.0"
+        },
+        {
+          "id": "01p0900000K2lELAAZ",
+          "methodName": "LightningLoginFormControllerInstantiation",
+          "name": "LightningLoginFormControllerTest",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "time": "49.0"
+        },
+        {
+          "id": "01p0900000K2lENAAZ",
+          "methodName": "testSelfRegisterWithCreatedAccount",
+          "name": "LightningSelfRegisterControllerTest",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "time": "282.0"
+        },
+        {
+          "id": "01p0900000K2lENAAZ",
+          "methodName": "testSelfRegisterWithProperCredentials",
+          "name": "LightningSelfRegisterControllerTest",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "time": "60.0"
+        },
+        {
+          "id": "01p0900000K2lENAAZ",
+          "methodName": "testSelfRegistration",
+          "name": "LightningSelfRegisterControllerTest",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "time": "68.0"
+        },
+        {
+          "id": "01p0900000K2lENAAZ",
+          "methodName": "testSiteAsContainerEnabled",
+          "name": "LightningSelfRegisterControllerTest",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "time": "75.0"
+        },
+        {
+          "id": "01p0900000K2lE9AAJ",
+          "methodName": "testSave",
+          "name": "MyProfilePageControllerTest",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "time": "512.0"
+        },
+        {
+          "id": "01p0900000CmFmYAAV",
+          "methodName": "testResetMyPassword",
+          "name": "tt_UtilControllerTest",
+          "namespace": "trlhdtips",
+          "time": "296.0"
+        },
+        {
+          "id": "01p0900000CmFmYAAV",
+          "methodName": "testGetCurrentUser",
+          "name": "tt_UtilControllerTest",
+          "namespace": "trlhdtips",
+          "time": "65.0"
+        },
+        {
+          "id": "01p0900000K2lE3AAJ",
+          "methodName": "testRegistration",
+          "name": "SiteRegisterControllerTest",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "time": "67.0"
+        },
+        {
+          "id": "01p0900000K2lE1AAJ",
+          "methodName": "testSiteLoginController",
+          "name": "SiteLoginControllerTest",
+          "namespace": {
+            "$": {
+              "xsi:nil": "true"
+            }
+          },
+          "time": "53.0"
+        }
+      ],
+      "totalTime": "2922.0"
+    }
+  },
+  "done": true,
+  "id": "0Af0900000RWu2HCAT",
+  "ignoreWarnings": false,
+  "lastModifiedDate": "2021-11-28T16:08:49.000Z",
+  "numberComponentErrors": 0,
+  "numberComponentsDeployed": 24,
+  "numberComponentsTotal": 24,
+  "numberTestErrors": 0,
+  "numberTestsCompleted": 28,
+  "numberTestsTotal": 28,
+  "rollbackOnError": true,
+  "runTestsEnabled": true,
+  "startDate": "2021-11-28T16:08:43.000Z",
+  "status": "Failed",
+  "success": false
+}
