@@ -197,14 +197,14 @@ describe('junit adapter', () => {
       expect(adapter.testReport()).not.to.be.equal('');
     });
     it('escapes double quotes in message value', () => {
-      const result: string = new DeployReportJunitTestAdapater(null).buildFailedTestCase({
-        message: '"n"',
-        methodName: 'not contains quotes',
-        name: 'not contains quotes',
-        stackTrace: 'not contains quoutes',
-        time: '123',
+      const result: string = new DeployReportJunitTestAdapater({}).buildFailedTestCase({
+        ...failure(),
+        message: 'message with "double" quotes',
       });
-      expect(result).to.contain('<failure message="&quot;n&quot;">');
+      expect(result).to.contain('<failure message="message with &quot;double&quot; quotes');
     });
   });
+  // describe('Test Coverage', () => {
+  //   it('')
+  // });
 });
